@@ -1,5 +1,7 @@
 package main
 
+import("C")
+
 import (
 	"os"
 
@@ -19,6 +21,11 @@ var (
 	profilePath  string
 	isFullExport bool
 )
+
+//export run
+func run() {
+	Execute()
+}
 
 func main() {
 	Execute()
